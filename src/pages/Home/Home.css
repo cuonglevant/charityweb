@@ -1,0 +1,29 @@
+.header {
+  background-color: var(--home-background-color);
+  height: 20rem;
+  padding: 2rem;
+}
+
+.navbar-container {
+  width: 100%;
+}
+
+.navbar {
+  height: 15rem;
+  width: 40%;
+}
+
+.search-input {
+  font-size: var(--font-size-medium);
+  width: 35rem;
+  border: none;
+}
+
+.search-form {
+  width: 35rem;
+}
+
+.search-icon {
+  width: 2rem;
+  background-color: var(--home-background-color);
+}
