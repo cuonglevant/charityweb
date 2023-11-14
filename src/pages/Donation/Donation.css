@@ -1,0 +1,216 @@
+nav{
+  background-color: var(--nav-backgrond-color);
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+}
+body{
+  background-color: var(--home-background-color);
+}
+.nav--img{
+  height: 5.25rem;
+  left: 4.938rem;
+  object-fit: cover;
+  position: absolute;
+  top: 0.188rem;
+  width: 5.938rem;
+}
+/*Dropdown menu*/
+.dropbtn {
+  background-color: var(--nav-backgrond-color);
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #98e096;
+  min-width: 10rem;
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: var(--nav-backgrond-color)}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/*Search bar*/
+.nav--searchbar{
+
+}
+/*form*/
+.icon{
+  display: inline-flex;
+  background-color: #bfb562;
+  border-color: #e2e71a;
+  height: 4rem;
+  width: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.btn-custom{
+  background-color: #bfb562;
+  height: 4rem;
+  left: 0;
+  top: 0;
+  bottom: 1rem;
+  width: 15rem;
+  margin-left: 1rem;
+  border: none;
+  display: inline-flexbox;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-medium);
+  font-family:  Playfair Display-Bold;
+}
+.money-input{
+  font-size: 1.5rem;
+  height: 4rem;
+  display: inline-flexbox;
+  border: none;
+  box-shadow: none;
+  background-color: #f2eddc;
+}
+h1{
+  font-family:  Playfair Display-Bold;
+  font-weight: 700;
+  font-size: var(--font-size-large);
+}
+.form{
+  position: relative; 
+  height: 120vh; 
+  width: 100%;
+}
+form{
+  position: absolute; 
+  top: 26%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+.btn{
+  align-items: center;
+  color: #8e911180;
+  background-color: white;
+  display: inline-flex;
+  gap: 0.625rem;
+  justify-content: center;
+  padding: 0.313rem 1.25rem;
+  margin-right: 0.75rem;
+  position: relative;
+  border-color: #e2e71a;
+  font-size: 1.5rem;
+}
+.btn:hover{
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: #e2e71a;
+}
+
+.amount{
+  background-color: #bfb562;
+  height: 3rem;
+  position: relative;
+  width: 10rem;
+  display: inline-block;
+  font-size: var(--font-size-medium);
+  justify-content: center;
+  text-align: center;
+  margin-left: 1rem;
+}
+.label-total{
+  background-color:  var( --label-background-color);
+  height: 3rem;
+  width: 15rem;
+  justify-content: center;
+  display: inline-block;
+  font-size: var(--font-size-medium);
+  font-family:  Playfair Display-Bold;
+}
+.text-first{
+  font-size: 1.5rem;
+  font-weight: 400;
+  left: 1.125rem;
+  line-height: 1.25rem;
+  top: 1.063rem;
+
+  margin-right: 1.563rem;
+  display: inline-block;
+  border-color:  var(--border-color);
+}
+.FirstName{
+  width: 20rem;
+}
+.text-last{
+font-size: 1.5rem;
+font-weight: 400;
+left: 3.125rem;
+line-height: 1.25rem;
+top: 0.875rem;
+display: inline-block;
+border-color:  var(--border-color);
+}
+.LastName{
+  width: 20rem;
+}
+.name{
+  margin-bottom: 1.5rem;
+}
+.email{
+  width: 41.65rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  border-color:  var(--border-color);
+}
+.form-control{
+  font-size: 1.5rem;
+}
+/* #onl-donate{
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  align-items: center;
+}
+#off-donate{
+  font-size: 1.5rem;
+  align-items: center;
+} */
+.money{
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.btn-donate #btn-donate{
+  margin-top: 1rem;
+  width: 41.65rem;
+  font-family: Playfair Display-Bold;
+  font-size: var(--font-size-medium);
+  background-color: var(--btn-background-color);
+  color: #534C11;
+}
+.form-check {
+  font-size: var(--font-size-medium);
+  border: 0;
+  margin-right: 3rem;
+  font-family:  Playfair Display-Bold;
+}

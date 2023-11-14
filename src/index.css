@@ -1,9 +1,12 @@
 :root {
   --home-background-color: #e5e6c7;
-
+  --nav-backgrond-color: #32C32F;
   --font-size-small: 1.2rem;
   --font-size-medium: 1.8rem;
   --font-size-large: 2.4rem;
+  --border-color: #d8d6d6;
+  --label-background-color: #ffffff;
+  --btn-background-color: #ECDB47;
 }
 
 * {
