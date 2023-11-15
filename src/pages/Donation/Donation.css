@@ -147,7 +147,7 @@ form{
   background-color: var(--btn-background-color);
   height: 3rem;
   position: relative;
-  width: 10rem;
+  width: 14rem;
   display: inline-block;
   font-size: var(--font-size-medium);
   justify-content: center;
@@ -203,7 +203,6 @@ border-color:  var(--border-color);
   width: 41.65rem;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
-  border-color:  var(--border-color);
 }
 
 .form-control{

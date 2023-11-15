@@ -258,6 +258,7 @@
   top: 0;
   white-space: nowrap;
   width: 26px;
+  cursor: pointer;
 }
 
 .account .social-media-account-wrapper {
@@ -349,6 +350,7 @@
   top: 0;
   white-space: nowrap;
   width: 28px;
+  cursor: pointer;
 }
 
 .account .email-address-wrapper {
