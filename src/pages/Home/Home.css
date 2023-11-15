@@ -1,29 +1,250 @@
 .header {
   background-color: var(--home-background-color);
-  height: 20rem;
-  padding: 2rem;
+  height: 12rem;
+  padding: 1rem 1rem 1rem 2rem;
 }
 
-.navbar-container {
-  width: 100%;
+.nav-bar {
+  display: flex;
 }
 
-.navbar {
-  height: 15rem;
-  width: 40%;
+.logo {
+  height: 10rem;
+  flex: 4;
 }
 
-.search-input {
-  font-size: var(--font-size-medium);
-  width: 35rem;
-  border: none;
+.menu-bar {
+  flex: 6;
 }
 
-.search-form {
-  width: 35rem;
+.logo img {
+  height: 10rem;
+  margin: 0;
+}
+
+.search-login{
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 2.5rem;
+  flex: 9;
 }
 
 .search-icon {
-  width: 2rem;
+  color: var(--search-icon-color);
+  height: 2.5rem;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+}
+
+.search-input {
+  border: 0;
+  font-size: var(--font-size-medium);
+  width: 100%;
+}
+
+.login-btn {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.login-btn img {
+  height: 3rem;
+}
+
+.page-donate {
+  display: flex;
+  align-items: center;
+}
+
+.page-links {
+  display: flex;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+}
+
+.page-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: var(--font-size-medium);
+  padding: 1rem;
+}
+
+.donate-btn {
+  display: flex;
+  font-size: var(--font-size-medium);
+}
+
+.donate {
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  background-color: var(--donate-btn-color);
+  color: var(--intro-discription-color);
+  font-weight: 500;
+  margin: 1rem 0.5rem 0 0.5rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-radius: 4rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.fundraise {
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  font-weight: 500;
+  background-color: var(--fundraise-btn-color);
+  margin: 1rem 0.5rem 0 0.5rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-radius: 4rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.body {
   background-color: var(--home-background-color);
+  padding-top: 5rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-img img {
+  width: 100rem;
+}
+
+.intro-text {
+  padding-left: 5rem;
+  width: 30rem;
+}
+
+.intro-text-title {
+  color: var(--intro-discription-color);
+  font-size: var(--font-size-extralarge);
+}
+
+.intro-discription {
+  color: var(--intro-discription-color);
+  font-size: var(--font-size-medium);
+}
+
+.read-more a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: var(--font-size-medium);
+  color: var(--text-color);
+}
+
+.read-more a:hover {
+  color: var(--search-icon-color);
+}
+
+.fund-target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 10rem 0 120rem;
+  border-radius: 1rem 1rem 0 0;
+  font-size: var(--font-size-medium);
+  background-color: var(--fundraise-target-color);
+  width: 25rem;
+  height: 4rem;
+}
+
+.fund-info {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10rem;
+  margin: 0 6.9rem 0 10.7rem;
+}
+
+.donated {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--fundraise-target-color);
+  border-radius: 1rem 0 0 1rem;
+  height: 15rem;
+}
+
+.donated-icon {
+  margin-right: 2rem;
+}
+
+.donated-info {
+  margin-left: 2rem;
+}
+
+.people-donated {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.donated-num {
+  color: var(--intro-discription-color);
+  font-size: var(--font-size-extralarge);
+  font-weight: bold;
+}
+
+.sponsored {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sponsored-color);
+}
+
+.sponsored-icon {
+  margin-right: 2rem;
+}
+
+.sponsored-info {
+  margin-left: 2rem;
+}
+
+.kid-sponsored {
+  color: var(--sponsored-text-color);
+  font-weight: 600;
+}
+
+.sponsored-num {
+  color: var(--intro-discription-color);
+  font-size: var(--font-size-extralarge);
+  font-weight: bold;
+}
+
+.raised {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--fundraise-target-color);
+  border-radius: 0 0 1rem 0;
+}
+
+.raised-icon {
+  margin-right: 2rem;
+}
+
+.raised-info {
+  margin-left: 2rem;
+}
+
+.money-raised {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.raised-num {
+  color: var(--intro-discription-color);
+  font-size: var(--font-size-extralarge);
+  font-weight: bold;
 }
