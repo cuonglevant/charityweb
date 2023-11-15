@@ -1,5 +1,10 @@
 :root {
   --home-background-color: #e5e6c7;
+  --title-text-color-1: rgb(53, 52, 38); 
+  --title-text-color-2: #666666;
+  --object-color: #e2e71a40;
+  --white: white;
+  --button-background-color: #948d49;
 
   --font-size-small: 1.2rem;
   --font-size-medium: 1.8rem;
