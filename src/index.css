@@ -1,10 +1,7 @@
 :root {
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> e5ad887 (feat/volunteer&account(undone))
   --home-background-color: #e5e6c7;
   --nav-backgrond-color: #32C32F;
   --font-size-small: 1.2rem;
@@ -22,8 +19,6 @@
   --dropbtn-background-color:#3e8e41;
   --dropdown-content-a: black;
   --dropdown-content-background-color: #98e096;
-<<<<<<< HEAD
-=======
 
   --font-size-small: 1.2rem;
   --font-size-medium: 1.8rem;
@@ -54,7 +49,6 @@
   --text-letter-spacing: 0.075px;
   --text-line-height: 45px;
 
->>>>>>> e5ad887 (feat/volunteer&account(undone))
 }
 
 * {
