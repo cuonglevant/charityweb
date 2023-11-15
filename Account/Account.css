@@ -1,0 +1,549 @@
+.nav{
+  background-color: var(--nav-backgrond-color);
+}
+.account {
+  background-color: #e2e71a26;
+  height: 1024px;
+  position: relative;
+  width: 1440px;
+}
+
+.account .body {
+  height: 943px;
+  position: relative;
+  top: 81px;
+}
+
+.account .contianer {
+  height: 923px;
+  left: 204px;
+  position: absolute;
+  top: 41px;
+  width: 1032px;
+}
+
+.account .overlap {
+  height: 865px;
+  left: -8px;
+  position: relative;
+  width: 1048px;
+}
+
+.account .personal-info {
+  height: 815px;
+  left: 0;
+  position: absolute;
+  top: 50px;
+  width: 1048px;
+}
+
+.account .FA-qs {
+  border: 1px solid;
+  border-color: #dddddd;
+  border-radius: 12px;
+  height: 815px;
+  left: 881px;
+  position: absolute;
+  top: -68px;
+  width: 333px;
+}
+
+.account .question {
+  height: 204px;
+  left: 25px;
+  position: absolute;
+  top: 584px;
+  width: 284px;
+}
+
+.account .text-wrapper {
+  color: #717171;
+  font-family: "Roboto", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 67px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 22.9px;
+  position: absolute;
+  top: 137px;
+  width: 280px;
+}
+
+.account .div {
+  color: #222222;
+  font-family: "Roboto", Helvetica;
+  font-size: 20px;
+  font-weight: 800;
+  height: 55px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 28.6px;
+  position: absolute;
+  top: 65px;
+  width: 229px;
+}
+
+.account .svg {
+  height: 48px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 48px;
+}
+
+.account .div-2 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #dddddd;
+  height: 1px;
+  left: 25px;
+  position: absolute;
+  top: 551px;
+  width: 283px;
+}
+
+.account .question-2 {
+  height: 244px;
+  left: 25px;
+  position: absolute;
+  top: 273px;
+  width: 285px;
+}
+
+.account .p {
+  color: #717171;
+  font-family: "Roboto", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 135px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 22.9px;
+  position: absolute;
+  top: 109px;
+  width: 281px;
+}
+
+.account .text-wrapper-2 {
+  color: #222222;
+  font-family: "Roboto", Helvetica;
+  font-size: 20px;
+  font-weight: 800;
+  height: 26px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 28.6px;
+  position: absolute;
+  top: 65px;
+  white-space: nowrap;
+  width: 275px;
+}
+
+.account .div-3 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #dddddd;
+  height: 1px;
+  left: 25px;
+  position: absolute;
+  top: 240px;
+  width: 283px;
+}
+
+.account .question-3 {
+  height: 181px;
+  left: 25px;
+  position: absolute;
+  top: 25px;
+  width: 275px;
+}
+
+.account .text-wrapper-3 {
+  color: #717171;
+  font-family: "Roboto", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 44px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 22.9px;
+  position: absolute;
+  top: 137px;
+  width: 271px;
+}
+
+.account .text-wrapper-4 {
+  color: #222222;
+  font-family: "Roboto", Helvetica;
+  font-size: 20px;
+  font-weight: 800;
+  height: 55px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 28.6px;
+  position: absolute;
+  top: 65px;
+  width: 230px;
+}
+
+.account .settings {
+  height: 564px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 611px;
+}
+
+.account .container {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(235, 235, 235), rgba(235, 235, 235, 0)) 1;
+  height: 91px;
+  left: 9px;
+  position: absolute;
+  top: 291px;
+  width: 595px;
+}
+
+.account .div-4 {
+  height: 42px;
+  position: relative;
+  top: 24px;
+}
+
+.account .text-wrapper-5 {
+  color: #222222;
+  font-family: "Roboto", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 21px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: -2px;
+  white-space: nowrap;
+  width: 61px;
+}
+
+.account .text-wrapper-6 {
+  color: #717171;
+  font-family: "Roboto", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 18px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: 23px;
+  white-space: nowrap;
+  width: 85px;
+}
+
+.account .text-wrapper-7 {
+  color: #222222;
+  font-family: "Roboto", Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  height: 18px;
+  left: 569px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  text-align: right;
+  text-decoration: underline;
+  top: 0;
+  white-space: nowrap;
+  width: 26px;
+}
+
+.account .social-media-account-wrapper {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(235, 235, 235), rgba(235, 235, 235, 0)) 1;
+  height: 91px;
+  left: 10px;
+  position: absolute;
+  top: 389px;
+  width: 595px;
+}
+
+.account .text-wrapper-8 {
+  color: #222222;
+  font-family: "Roboto", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 20px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: -2px;
+  white-space: nowrap;
+  width: 185px;
+}
+
+.account .phone-numbers-wrapper {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(235, 235, 235), rgba(235, 235, 235, 0)) 1;
+  height: 109px;
+  left: 8px;
+  position: absolute;
+  top: 182px;
+  width: 595px;
+}
+
+.account .phone-numbers {
+  height: 60px;
+  position: relative;
+  top: 24px;
+}
+
+.account .text-wrapper-9 {
+  color: #222222;
+  font-family: "Roboto", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 21px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: -2px;
+  white-space: nowrap;
+  width: 115px;
+}
+
+.account .text-wrapper-10 {
+  color: #717171;
+  font-family: "Roboto", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 36px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: 23px;
+  width: 529px;
+}
+
+.account .text-wrapper-11 {
+  color: #222222;
+  font-family: "Roboto", Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  height: 18px;
+  left: 568px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  text-align: right;
+  text-decoration: underline;
+  top: 0;
+  white-space: nowrap;
+  width: 28px;
+}
+
+.account .email-address-wrapper {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(235, 235, 235), rgba(235, 235, 235, 0)) 1;
+  height: 91px;
+  left: 8px;
+  position: absolute;
+  top: 91px;
+  width: 595px;
+}
+
+.account .text-wrapper-12 {
+  color: #222222;
+  font-family: "Roboto", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 21px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: -2px;
+  white-space: nowrap;
+  width: 101px;
+}
+
+.account .email {
+  color: #717171;
+  font-family: "Roboto", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  height: 18px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: 23px;
+  white-space: nowrap;
+}
+
+.account .legal-name-wrapper {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: transparent;
+  border-image: linear-gradient(to bottom, rgb(235, 235, 235), rgba(235, 235, 235, 0)) 1;
+  height: 91px;
+  left: 8px;
+  position: absolute;
+  top: 0;
+  width: 595px;
+}
+
+.account .text-wrapper-13 {
+  color: #222222;
+  font-family: "Roboto", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  height: 21px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: -2px;
+  white-space: nowrap;
+  width: 84px;
+}
+
+.account .name {
+  color: #717171;
+  font-family: "Roboto", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  height: 18px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: 23px;
+  white-space: nowrap;
+}
+
+.account .account-navigation {
+  height: 68px;
+  left: 8px;
+  position: absolute;
+  top: 0;
+  width: 1032px;
+}
+
+.account .ol {
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1032px;
+}
+
+.account .overlap-group {
+  height: 20px;
+  position: relative;
+  width: 183px;
+}
+
+.account .text-wrapper-14 {
+  color: #484848;
+  font-family: "Roboto", Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  height: 18px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 57px;
+}
+
+.account .li {
+  align-items: center;
+  display: inline-flex;
+  gap: 16px;
+  left: 56px;
+  padding: 1px 0.55px 1.02px 16px;
+  position: absolute;
+  top: 0;
+}
+
+.account .img {
+  height: 10px;
+  position: relative;
+  width: 10px;
+}
+
+.account .text-wrapper-15 {
+  color: #484848;
+  font-family: "Roboto", Helvetica;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.account .text-wrapper-16 {
+  color: #484848;
+  font-family: "Roboto", Helvetica;
+  font-size: 32px;
+  font-weight: 800;
+  height: 41px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 36px;
+  position: absolute;
+  top: 28px;
+  white-space: nowrap;
+  width: 197px;
+}
+
+.account .group {
+  height: 109px;
+  left: 90px;
+  position: absolute;
+  top: 75px;
+  width: 81px;
+}
+
+.account .image {
+  height: 62px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 79px;
+}
+
+.account .text-wrapper-17 {
+  color: #00000087;
+  font-family: "Roboto", Helvetica;
+  font-size: 12px;
+  font-weight: 800;
+  height: 3px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 36px;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 106px;
+  white-space: nowrap;
+  width: 79px;
+}

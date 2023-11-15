@@ -36,7 +36,6 @@ function Login() {
           </div>
           <div className="register-btn">Don't have an account? Register</div>
         </div>
-      </div>
     </div>
 }
 
