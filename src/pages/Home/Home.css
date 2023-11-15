@@ -6,20 +6,24 @@
 
 .nav-bar {
   display: flex;
+  height: 12rem;
+  border-radius: 1.25rem;
 }
 
 .logo {
   height: 10rem;
-  flex: 4;
+  border-radius: 1.25rem;
+  background-color: var(--nav-backgrond-color);
+  flex: 5;
 }
 
 .menu-bar {
-  flex: 6;
+  flex: 4;
 }
 
 .logo img {
-  height: 10rem;
-  margin: 0;
+    height: 10rem;
+    margin: 0;
 }
 
 .search-login{
@@ -125,12 +129,12 @@
 }
 
 .intro-text-title {
-  color: var(--intro-discription-color);
+ color: var(--text-color );
   font-size: var(--font-size-extralarge);
 }
 
 .intro-discription {
-  color: var(--intro-discription-color);
+  color: var(--text-color);
   font-size: var(--font-size-medium);
 }
 

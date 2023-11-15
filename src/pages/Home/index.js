@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import Logo from "../../assets/img/Logo.png";
 import Login from "../../assets/img/Login-btn.png";
@@ -18,17 +18,18 @@ function Home() {
       <div className="header">
         <nav className="nav-bar">
           <div className="logo">
-            <img src={Logo} alt="logo"  />
+            <img src={Logo} alt="logo" />
           </div>
           <div className="menu-bar">
             <div className="search-login">
               <div className="search-bar">
                 <FontAwesomeIcon className="search-icon" icon={faSearch} />
-                <input 
+                <input
                   className="search-input"
                   type="search"
                   placeholder="Find your friend or search the news"
-                  aria-label="Search" />
+                  aria-label="Search"
+                />
               </div>
               <div className="login-btn">
                 <img src={Login} alt="login" />
@@ -45,9 +46,6 @@ function Home() {
                 <div className="ways-to-rise">
                   <a href="/">Ways to Fundraise</a>
                 </div>
-                <div className="volunteer">
-                  <a href="/">Volunteer</a>
-                </div>
               </div>
               <div className="donate-btn">
                 <div className="donate">DONATE</div>
@@ -63,10 +61,12 @@ function Home() {
             <img src={Intro} alt="Illustration" />
           </div>
           <div className="intro-text">
-            <div className="intro-text-title">Your gift can make a <b>real impact</b></div>
+            <div className="intro-text-title">
+              Your gift can make a <b>real impact</b>
+            </div>
             <div className="intro-discription">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
             </div>
             <div className="read-more">
               <a href="/">
@@ -76,11 +76,13 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="fund-target"><div>Fundraise target: $1,500,000</div></div>
+        <div className="fund-target">
+          <div>Fundraise target: $1,500,000</div>
+        </div>
         <div className="fund-info">
           <div className="donated">
             <div className="donated-icon">
-              <img src={Donated} alt="donated"/>
+              <img src={Donated} alt="donated" />
             </div>
             <div className="donated-info">
               <div className="people-donated">People donated</div>
@@ -89,7 +91,7 @@ function Home() {
           </div>
           <div className="sponsored">
             <div className="sponsored-icon">
-              <img src={Sponsored} alt="sponsored"/>
+              <img src={Sponsored} alt="sponsored" />
             </div>
             <div className="sponsored-info">
               <div className="kid-sponsored">Kids get sponsored</div>
@@ -97,8 +99,8 @@ function Home() {
             </div>
           </div>
           <div className="raised">
-          <div className="raised-icon">
-              <img src={Raised} alt="raised"/>
+            <div className="raised-icon">
+              <img src={Raised} alt="raised" />
             </div>
             <div className="raised-info">
               <div className="money-raised">Money raised so far</div>
