@@ -10,7 +10,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          {/* <Route path={ROUTES.HOME_PATH} element={<Home />} /> */}
           <Route path={ROUTES.DONATION_PATH} element={<Donation />} />
         </Routes>
       </BrowserRouter>

@@ -7,9 +7,11 @@ nav{
   left: 0;
   top: 0;
 }
+
 body{
   background-color: var(--home-background-color);
 }
+
 .nav--img{
   height: 5.25rem;
   left: 4.938rem;
@@ -18,30 +20,33 @@ body{
   top: 0.188rem;
   width: 5.938rem;
 }
+
 /*Dropdown menu*/
 .dropbtn {
   background-color: var(--nav-backgrond-color);
-  color: white;
+  color: var(--label-background-color);
   padding: 1rem;
   font-size: 1rem;
   border: none;
   cursor: pointer;
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #98e096;
+  background-color: var(--dropdown-content-background-color);
   min-width: 10rem;
   box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: var(--dropdown-content-a);
   padding: 0.75rem 1rem;
   text-decoration: none;
   display: block;
@@ -54,25 +59,27 @@ body{
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: var(--dropbtn-background-color);
 }
 
 /*Search bar*/
 .nav--searchbar{
 
 }
+
 /*form*/
 .icon{
   display: inline-flex;
-  background-color: #bfb562;
-  border-color: #e2e71a;
+  background-color: var(--btn-background-color);
+  border-color: var(--btn-boder-color);
   height: 4rem;
   width: 4rem;
   justify-content: center;
   align-items: center;
 }
+
 .btn-custom{
-  background-color: #bfb562;
+  background-color: var(--btn-background-color);
   height: 4rem;
   left: 0;
   top: 0;
@@ -86,51 +93,58 @@ body{
   font-size: var(--font-size-medium);
   font-family:  Playfair Display-Bold;
 }
+
 .money-input{
   font-size: 1.5rem;
   height: 4rem;
   display: inline-flexbox;
   border: none;
   box-shadow: none;
-  background-color: #f2eddc;
+  background-color: var(--money-input-background-color);
 }
+
 h1{
   font-family:  Playfair Display-Bold;
   font-weight: 700;
   font-size: var(--font-size-large);
 }
+
 .form{
   position: relative; 
   height: 120vh; 
   width: 100%;
 }
+
 form{
   position: absolute; 
   top: 26%; 
   left: 50%; 
   transform: translate(-50%, -50%);
 }
+
 .btn{
   align-items: center;
-  color: #8e911180;
-  background-color: white;
+  color: var(--btn-color);
+  background-color: var(--label-background-color);
   display: inline-flex;
   gap: 0.625rem;
   justify-content: center;
   padding: 0.313rem 1.25rem;
   margin-right: 0.75rem;
   position: relative;
-  border-color: #e2e71a;
+  border-color: var(--btn-boder-color);
   font-size: 1.5rem;
 }
+
 .btn:hover{
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  background-color: #e2e71a;
+  background-color: var(--btn-hover);
 }
 
+
 .amount{
-  background-color: #bfb562;
+  background-color: var(--btn-background-color);
   height: 3rem;
   position: relative;
   width: 10rem;
@@ -140,6 +154,7 @@ form{
   text-align: center;
   margin-left: 1rem;
 }
+
 .label-total{
   background-color:  var( --label-background-color);
   height: 3rem;
@@ -149,7 +164,8 @@ form{
   font-size: var(--font-size-medium);
   font-family:  Playfair Display-Bold;
 }
-.text-first{
+
+.text-firstName{
   font-size: 1.5rem;
   font-weight: 400;
   left: 1.125rem;
@@ -160,10 +176,12 @@ form{
   display: inline-block;
   border-color:  var(--border-color);
 }
+
 .FirstName{
   width: 20rem;
 }
-.text-last{
+
+.text-lastName{
 font-size: 1.5rem;
 font-weight: 400;
 left: 3.125rem;
@@ -172,42 +190,40 @@ top: 0.875rem;
 display: inline-block;
 border-color:  var(--border-color);
 }
+
 .LastName{
   width: 20rem;
 }
+
 .name{
   margin-bottom: 1.5rem;
 }
+
 .email{
   width: 41.65rem;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   border-color:  var(--border-color);
 }
+
 .form-control{
   font-size: 1.5rem;
 }
-/* #onl-donate{
-  font-size: 1.5rem;
-  margin-right: 1rem;
-  align-items: center;
-}
-#off-donate{
-  font-size: 1.5rem;
-  align-items: center;
-} */
+
 .money{
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
+
 .btn-donate #btn-donate{
   margin-top: 1rem;
   width: 41.65rem;
   font-family: Playfair Display-Bold;
   font-size: var(--font-size-medium);
-  background-color: var(--btn-background-color);
-  color: #534C11;
+  background-color: var(--btn-donate-background-color);
+  color:var(--btn-donate)
 }
+
 .form-check {
   font-size: var(--font-size-medium);
   border: 0;
