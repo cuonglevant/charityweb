@@ -1,10 +1,4 @@
 :root {
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> e5ad887 (feat/volunteer&account(undone))
   --home-background-color: #e5e6c7;
   --nav-backgrond-color: #32C32F;
   --font-size-small: 1.2rem;
@@ -22,39 +16,6 @@
   --dropbtn-background-color:#3e8e41;
   --dropdown-content-a: black;
   --dropdown-content-background-color: #98e096;
-<<<<<<< HEAD
-=======
-
-  --font-size-small: 1.2rem;
-  --font-size-medium: 1.8rem;
-  --font-size-large: 2.4rem;
-  --border-color: #d8d6d6;
-  --label-background-color: #ffffff;
-  --btn-donate-background-color: #ECDB47;
-  --btn-donate: #534C11;
-  --btn-background-color: #bfb562;
-  --btn-hover: #e2e71a;
-  --btn-boder-color: #e2e71a;;
-  --btn-color: #8e911180;
-  --money-input-background-color: #f2eddc;
-  --dropbtn-background-color:#3e8e41;
-  --dropdown-content-a: black;
-  --dropdown-content-background-color: #98e096;
-
-  --home-background-color: #eceec2;
-  --nav-backgrond-color: #90d471;
-
-  --font-size-small: 1.2rem;
-  --font-size-medium: 1.8rem;
-  --font-size-large: 2.4rem;
-  --text-font-family: "jsMath-cmbx10-cmmi10", Helvetica;
-  --text-font-size: 30px;
-  --text-font-style: normal;
-  --text-font-weight: 400;
-  --text-letter-spacing: 0.075px;
-  --text-line-height: 45px;
-
->>>>>>> e5ad887 (feat/volunteer&account(undone))
 }
 
 * {
