@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Charity Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a repository for the final exam project of Thematic 1
 
-## Available Scripts
+Thank Mr. Hoang for this repository.
 
-In the project directory, you can run:
+Project Name : **_Charity Web_**
 
-### `npm start`
+Link to Repo Clean Code : [Clean Code Javascript](https://github.com/ces-hoangdao/clean-code-javascript)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Semantic Release
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The template repository which supports semantic release version.
 
-### `npm test`
+To find out more, please read the following link:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- https://www.conventionalcommits.org/en/v1.0.0-beta/
+- https://semantic-release.gitbook.io/semantic-release/
+- https://viblo.asia/p/semantic-versioning-OeVKBN2EKkW
 
-### `npm run build`
+# Semantic Commit Messages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Find out more [here](https://docs.google.com/presentation/d/1qvh8Tr4nCce4aOdYX7vkqQPoBbf2sfBTOYYsqhTBYRU)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+See how a minor change to your commit message style can make you a better programmer.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Format: `<type>(<scope>): <subject>`
 
-### `npm run eject`
+`<scope>` is defined depending on each team. For instance:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+fix(core): remove deprecated APIs
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+feat(ui): add Contact form
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## The Header (required)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+feat: add hat wobble
+^--^  ^------------^
+|     |
+|     +-> Summary in present tense. No uppercase first character and should be a verb.
+|
++-------> Type: chore, docs, feat, fix, refactor, style, or test.
+```
 
-## Learn More
+More Examples:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `feat`: (a commit of the type feat introduces a new feature to the codebase)
+- `fix`: (a commit of the type fix patches a bug in your codebase)
+- `docs`: (changes to the documentation)
+- `style`: (formatting, missing semi colons, etc; no production code change)
+- `refactor`: (refactoring production code, eg. renaming a variable)
+- `test`: (adding missing tests, refactoring tests; no production code change)
+- `chore`: (updating grunt tasks etc; no production code change)
+- `ci`: (updating CI/CD manifest)
+- `perf`: (changes related to performance improvements; no production code change)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## The Body (optional)
 
-### Code Splitting
+The body is optional lines that introduce the motivation behind the change or just describing slightly more detailed information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Let’s take the recent example and add a body:
 
-### Analyzing the Bundle Size
+```sh
+git commit -m "fix(core): remove deprecated and defunct wtf* apis" \
+           -m "These apis have been deprecated in v8, so they should stick around till v10, but since they are defunct we are removing them early so that they don't take up payload size."
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Now we attach to the message a couple of sentences that explain the purpose in detail.
 
-### Making a Progressive Web App
+Notice the following:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> - We use multiple -m in order to concatenate paragraphs instead of simple lines
+> - The header and body are supposed to be separated by a blank line (and that’s distinctly true due to the paragraphs)
 
-### Advanced Configuration
+## The Footer (required)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The footer is a required line that link to the relevant task in software collaboration tool.
 
-### Deployment
+Here’s the recent commit message with a footer:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```sh
+git commit -m "fix(core): remove deprecated apis" \
+           -m "These apis have been deprecated in v8, so they should stick around till v10, but since they are defunct we are removing them early so that they don't take up payload size." \
+           -m "CU-d0wqf"
+```
 
-### `npm run build` fails to minify
+In this case, we plainly add a reference to the relevant the Id of Clickup. Find out more [here](https://docs.clickup.com/en/articles/856285-github).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![](./git-click.png)
+
+# References:
+
+- https://www.conventionalcommits.org/
+- https://seesparkbox.com/foundry/semantic_commit_messages
+- http://karma-runner.github.io/1.0/dev/git-commit-msg.html
+- https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
+- https://nitayneeman.com/posts/understanding-semantic-commit-messages-using-git-and-angular
