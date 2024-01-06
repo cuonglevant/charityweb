@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
 import "./Donation.css";
+import Logo from "../../assets/img/Logo.png";
+
+
 function Donation() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -15,7 +18,7 @@ function Donation() {
     <div>
       <div className="header">
         <nav>
-          <img src="./assets/Logo.png" alt="Logo" className="nav--img" />
+          <img  className="nav--img" src={Logo} alt="Logo" />
           <div className="dropdown">
             <button className="dropbtn" onClick={handleClick}>
               Menu
@@ -53,81 +56,81 @@ function Donation() {
           <div className="money">
             <input
               type="radio"
-              class="btn-check"
+              className="btn-check"
               name="options-base"
               id="option1"
-              autocomplete="off"
+              autoComplete="off"
             />
-            <label class="btn" for="option1">
+            <label className="btn" for="option1">
               $10.00
             </label>
 
             <input
               type="radio"
-              class="btn-check"
+              className="btn-check"
               name="options-base"
               id="option2"
-              autocomplete="off"
+              autoComplete="off"
             />
-            <label class="btn" for="option2">
+            <label className="btn" for="option2">
               $25.00
             </label>
             <input
               type="radio"
-              class="btn-check"
+              className="btn-check"
               name="options-base"
               id="option3"
-              autocomplete="off"
+              autoComplete="off"
             />
-            <label class="btn" for="option3">
+            <label className="btn" for="option3">
               $50.00
             </label>
 
             <input
               type="radio"
-              class="btn-check"
+              className="btn-check"
               name="options-base"
               id="option4"
-              autocomplete="off"
+              autoComplete="off"
             />
-            <label class="btn" for="option4">
+            <label className="btn" for="option4">
               $100.00
             </label>
             <input
               type="radio"
-              class="btn-check"
+              className="btn-check"
               name="options-base"
               id="option5"
-              autocomplete="off"
+              autoComplete="off"
             />
-            <label class="btn" for="option5">
+            <label className="btn" for="option5">
               $250.00
             </label>
           </div>
           <h1>Select Payment Method</h1>
-          <div class="input-group">
-            <div class="form-check" id="onl-donate">
+          <div className="input-group">
+            <div className="form-check" id="onl-donate">
               <input
                 type="radio"
-                class="form-check-input"
+                className="form-check-input"
                 id="radio1"
                 name="optradio"
                 value="Onl"
                 checked
               />
               Online Donation
-              <label class="form-check-label" for="radio1"></label>
+              <label className="form-check-label" for="radio1"></label>
             </div>
-            <div class="form-check" id="off-donate">
+            <div className="form-check" id="off-donate">
               <input
                 type="radio"
-                class="form-check-input"
+                className="form-check-input"
                 id="radio2"
                 name="optradio"
                 value="Off"
               />
               Offline Donation
-              <label class="form-check-label" for="radio2"></label>
+              <label className="form-check-label" for="radio2"></label>
             </div>
           </div>
           <h1>Personal Infor</h1>
@@ -156,16 +159,16 @@ function Donation() {
           </div>
           <div className="comment-section">
             <textarea
-              class="form-control"
+              className="form-control"
               rows="5"
               id="comment"
               name="text"
               placeholder="Leave a comment"
             ></textarea>
           </div>
-          <div class="form-check">
+          <div className="form-check">
             <input
-              class="form-check-input mt-0"
+              className="form-check-input mt-0"
               type="checkbox"
               value=""
               aria-label="Checkbox for following text input"
@@ -178,7 +181,7 @@ function Donation() {
           <div className="amount">$10.00</div>
           <br />
           <div className="btn-donate">
-            <button class="btn" type="submit" id="btn-donate">
+            <button className="btn" type="submit" id="btn-donate">
               Donate now
             </button>
           </div>
