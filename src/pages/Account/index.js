@@ -1,41 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 
 import "./Account.css";
-import {
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-} from "reactstrap";
+
 import Logo from "../../assets/img/Logo.png";
 
 function Account() {
   return (
-    // <div className="header">
-    //     <nav>
-    //       <img src="./assets/Logo.png" alt="Logo" />
-    //       <div className="d-flex p-5">
-    //         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-    //           <DropdownToggle caret>Menu</DropdownToggle>
-    //           <DropdownMenu>
-    //             <DropdownItem>Home</DropdownItem>
-    //             <DropdownItem>About us</DropdownItem>
-    //             <DropdownItem>ways to function</DropdownItem>
-    //             <DropdownItem>News</DropdownItem>
-    //           </DropdownMenu>
-    //         </Dropdown>
-    //       </div>
-    //       <div className="nav--searchbar">
-    //       <input type="search" placeholder="Find your friend or search the news"></input>
-    //       </div>
-    //       <div className="box">
-    //   <div className="group">
-    //     <img className="img" alt="Avatar" src="./assets/Logo.png" />
-    //     <div className="text-wrapper">Welcome, userr1</div>
-    //   </div>
-      
-    // </div>
-
     <div className="account">
       <div className="body">
         <div className="contianer">
@@ -48,7 +18,7 @@ function Account() {
                     guests after a reservation is confirmed.
                   </p>
                   <p className="div">What info is shared with others?</p>
-                  <img className="svg" alt="Svg" src="/img/svg.svg" />
+                  <img className="svg" alt="Svg" src={Logo} />
                 </div>
                 <div className="div-2" />
                 <div className="question-2">
@@ -59,7 +29,7 @@ function Account() {
                     time you book or create a listing.
                   </p>
                   <p className="text-wrapper-2">Which details can be edited?</p>
-                  <img className="svg" alt="Svg" src="/img/svg-1.svg" />
+                  <img className="svg" alt="Svg" src={Logo} />
                 </div>
                 <div className="div-3" />
                 <div className="question-3">
@@ -127,7 +97,7 @@ function Account() {
           </div>
         </div>
         <div className="group">
-          <img className="image" alt="Image" src="/img/image-2.png" />
+          <img className="image" alt="lgo" src={Logo} />
           <div className="text-wrapper-17">choose profile picture</div>
         </div>
       </div>
