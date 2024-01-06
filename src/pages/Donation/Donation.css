@@ -12,61 +12,6 @@ body{
   background-color: var(--home-background-color);
 }
 
-.nav--img{
-  height: 5.25rem;
-  left: 4.938rem;
-  object-fit: cover;
-  position: absolute;
-  top: 0.188rem;
-  width: 5.938rem;
-}
-
-/*Dropdown menu*/
-.dropbtn {
-  background-color: var(--nav-backgrond-color);
-  color: var(--label-background-color);
-  padding: 1rem;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--dropdown-content-background-color);
-  min-width: 10rem;
-  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: var(--dropdown-content-a);
-  padding: 0.75rem 1rem;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: var(--nav-backgrond-color)}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: var(--dropbtn-background-color);
-}
-
-/*Search bar*/
-.nav--searchbar{
-
-}
-
 /*form*/
 .icon{
   display: inline-flex;
