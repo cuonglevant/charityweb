@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
 import "./Donation.css";
+import Logo from "../../assets/img/Logo.png";
+
+
 function Donation() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -11,11 +14,62 @@ function Donation() {
     setMenu(!menu);
   };
 
+  const handleOnChangeAmount = (event) =>{
+    this.setAmount ({
+      amount: event.target.value,
+    })
+  }
+
+  const [amount, setAmount] = useState('$0.00');
+  const [option1, setOption1] = useState('$10.00');
+  const [option2, setOption2] = useState('$25.00');
+  const [option3, setOption3] = useState('$50.00');
+  const [option4, setOption4] = useState('$100.00');
+  const [option5, setOption5] = useState('$250.00');
+  const [readOnly, setReadOnly] = useState(true);
+
+  const handleButtonClick = () => {
+    setReadOnly(false);
+  };
+
+  const handleMoneyButtonClick = (event) => {
+    const buttonId = event.target.id; 
+
+    let optionValue;
+    switch (buttonId) {
+      case 'option1':
+        optionValue = option1;
+        break;
+      case 'option2':
+        optionValue = option2;
+        break;
+      case 'option3':
+        optionValue = option3;
+        break;
+      case 'option4':
+        optionValue = option4;
+        break;
+      case 'option5':
+        optionValue = option5;
+        break;
+      default:
+        optionValue = '';
+        break;
+    }
+
+    setAmount(optionValue.toString());
+  };
+
+  const handleDonateButton = () => {
+    alert("Thanks for supporting us!");
+  };
+
+
   return (
     <div>
       <div className="header">
         <nav>
-          <img src="./assets/Logo.png" alt="Logo" className="nav--img" />
+          <img  className="nav--img" src={Logo} alt="Logo" />
           <div className="dropdown">
             <button className="dropbtn" onClick={handleClick}>
               Menu
@@ -47,87 +101,91 @@ function Donation() {
         <form>
           <h1>Your Donation</h1>
           <h3 className="icon">$</h3>
-          <input className="money-input" type="text"></input>
-          <button className="btn-custom">Custom Amount</button>
+          <input className="money-input" type="text" value={amount} onChange={e => setAmount(e.target.value) } readOnly={readOnly}></input>
+          <button type= "button" className="btn-custom" onClick={handleButtonClick}>Custom Amount</button>
           <br />
           <div className="money">
             <input
               type="radio"
-              class="btn-check"
+              className="btn-check"
               name="options-base"
               id="option1"
-              autocomplete="off"
+              autoComplete="off"
+              onClick={handleMoneyButtonClick}
             />
-            <label class="btn" for="option1">
-              $10.00
+            <label className="btn" htmlFor="option1">
+              {option1}
             </label>
 
             <input
               type="radio"
-              class="btn-check"
+              className="btn-check"
               name="options-base"
               id="option2"
-              autocomplete="off"
+              autoComplete="off"
+              onClick={handleMoneyButtonClick}
             />
-            <label class="btn" for="option2">
-              $25.00
+            <label className="btn" htmlFor="option2">
+              {option2}
             </label>
             <input
               type="radio"
-              class="btn-check"
+              className="btn-check"
               name="options-base"
               id="option3"
-              autocomplete="off"
+              autoComplete="off"
+              onClick={handleMoneyButtonClick}
             />
-            <label class="btn" for="option3">
-              $50.00
+            <label className="btn" htmlFor="option3">
+              {option3}
             </label>
 
             <input
               type="radio"
-              class="btn-check"
+              className="btn-check"
               name="options-base"
               id="option4"
-              autocomplete="off"
+              autoComplete="off"
+              onClick={handleMoneyButtonClick}
             />
-            <label class="btn" for="option4">
-              $100.00
+            <label className="btn" htmlFor="option4">
+              {option4}
             </label>
             <input
               type="radio"
-              class="btn-check"
+              className="btn-check"
               name="options-base"
               id="option5"
-              autocomplete="off"
+              autoComplete="off"
+              onClick={handleMoneyButtonClick}
             />
-            <label class="btn" for="option5">
-              $250.00
+            <label className="btn" htmlFor="option5">
+              {option5}
             </label>
           </div>
           <h1>Select Payment Method</h1>
-          <div class="input-group">
-            <div class="form-check" id="onl-donate">
+          <div className="input-group">
+            <div className="form-check" id="onl-donate">
               <input
                 type="radio"
-                class="form-check-input"
+                className="form-check-input"
                 id="radio1"
                 name="optradio"
                 value="Onl"
-                checked
               />
               Online Donation
-              <label class="form-check-label" for="radio1"></label>
+              <label className="form-check-label" htmlFor="radio1"></label>
             </div>
-            <div class="form-check" id="off-donate">
+            <div className="form-check" id="off-donate">
               <input
                 type="radio"
-                class="form-check-input"
+                className="form-check-input"
                 id="radio2"
                 name="optradio"
                 value="Off"
               />
               Offline Donation
-              <label class="form-check-label" for="radio2"></label>
+              <label className="form-check-label" htmlFor="radio2"></label>
             </div>
           </div>
           <h1>Personal Infor</h1>
@@ -156,16 +214,16 @@ function Donation() {
           </div>
           <div className="comment-section">
             <textarea
-              class="form-control"
+              className="form-control"
               rows="5"
               id="comment"
               name="text"
               placeholder="Leave a comment"
             ></textarea>
           </div>
-          <div class="form-check">
+          <div className="form-check">
             <input
-              class="form-check-input mt-0"
+              className="form-check-input mt-0"
               type="checkbox"
               value=""
               aria-label="Checkbox for following text input"
@@ -175,10 +233,10 @@ function Donation() {
           <div className="label-total">
             <div className="text-wrapper">Donation Total:</div>
           </div>
-          <div className="amount">$10.00</div>
+          <div className="amount">{amount}</div>
           <br />
           <div className="btn-donate">
-            <button class="btn" type="submit" id="btn-donate">
+            <button className="btn" type="submit" id="btn-donate" onClick={handleDonateButton}>
               Donate now
             </button>
           </div>
