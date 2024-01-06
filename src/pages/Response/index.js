@@ -119,9 +119,9 @@ function Response() {
         </div>
 
         <div className="button">
-          <button type="submit" className="submit-btn">
+          <a className="submit-btn" href="" Send Message>
             Send Message
-          </button>
+          </a>
         </div>
       </div>
     </div>
