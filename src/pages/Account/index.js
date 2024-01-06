@@ -3,6 +3,12 @@ import React from "react";
 import "./Account.css";
 
 import Logo from "../../assets/img/Logo.png";
+import Avt from "../../assets/img/avt.jpg";
+import Login from "../../assets/img/Login-btn.png";
+import Intro from "../../assets/img/intro-img.png";
+import Donated from "../../assets/img/Donated-icon.png";
+import Sponsored from "../../assets/img/Sponsored-icon.png";
+import Raised from "../../assets/img/Raised-icon.png";
 
 function Account() {
   return (
@@ -18,18 +24,18 @@ function Account() {
                     guests after a reservation is confirmed.
                   </p>
                   <p className="div">What info is shared with others?</p>
-                  <img className="svg" alt="Svg" src={Logo} />
+                  <img className="svg" alt="Svg" src={Raised} />
                 </div>
                 <div className="div-2" />
                 <div className="question-2">
                   <p className="p">
-                    Details Airbnb uses to verify your identity can’t be
+                    Details for users uses to verify your identity can’t be
                     changed. Contact info and some personal details can be
                     edited, but we may ask you verify your identity the next
-                    time you book or create a listing.
+                    time you donate.
                   </p>
                   <p className="text-wrapper-2">Which details can be edited?</p>
-                  <img className="svg" alt="Svg" src={Logo} />
+                  <img className="svg" alt="Svg" src={Sponsored} />
                 </div>
                 <div className="div-3" />
                 <div className="question-3">
@@ -39,7 +45,7 @@ function Account() {
                   <p className="text-wrapper-4">
                     Why isn’t my info shown here?
                   </p>
-                  <img className="svg" alt="Svg" src="/img/svg-3.svg" />
+                  <img className="svg" alt="Svg" src={Logo} />
                 </div>
               </div>
               <div className="settings">
@@ -87,7 +93,7 @@ function Account() {
                 <div className="overlap-group">
                   <div className="text-wrapper-14">Account</div>
                   <div className="li">
-                    <img className="img" alt="Svg" src="/img/svg-2.svg" />
+                    <img className="img" alt="Svg" src={Logo} />
                     <div className="text-wrapper-15">Personal info</div>
                   </div>
                 </div>
@@ -97,8 +103,9 @@ function Account() {
           </div>
         </div>
         <div className="group">
-          <img className="image" alt="lgo" src={Logo} />
-          <div className="text-wrapper-17">choose profile picture</div>
+          <img className="image" alt="lgo" src={Avt} />
+          <div className="text-wrapper-17">choose profile picture
+          </div>
         </div>
       </div>
     </div>
