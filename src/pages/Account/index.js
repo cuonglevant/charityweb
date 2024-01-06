@@ -1,11 +1,51 @@
+<<<<<<< HEAD
 import React from "react";
 
 import "./Account.css";
 
+=======
+import React, {useState} from "react";
+
+import "./Account.css";
+import {
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from "reactstrap";
+>>>>>>> 1f330c433cecbfd11928fd82c08c97af07922cc9
 import Logo from "../../assets/img/Logo.png";
 
 function Account() {
   return (
+<<<<<<< HEAD
+=======
+    // <div className="header">
+    //     <nav>
+    //       <img src="./assets/Logo.png" alt="Logo" />
+    //       <div className="d-flex p-5">
+    //         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+    //           <DropdownToggle caret>Menu</DropdownToggle>
+    //           <DropdownMenu>
+    //             <DropdownItem>Home</DropdownItem>
+    //             <DropdownItem>About us</DropdownItem>
+    //             <DropdownItem>ways to function</DropdownItem>
+    //             <DropdownItem>News</DropdownItem>
+    //           </DropdownMenu>
+    //         </Dropdown>
+    //       </div>
+    //       <div className="nav--searchbar">
+    //       <input type="search" placeholder="Find your friend or search the news"></input>
+    //       </div>
+    //       <div className="box">
+    //   <div className="group">
+    //     <img className="img" alt="Avatar" src="./assets/Logo.png" />
+    //     <div className="text-wrapper">Welcome, userr1</div>
+    //   </div>
+      
+    // </div>
+
+>>>>>>> 1f330c433cecbfd11928fd82c08c97af07922cc9
     <div className="account">
       <div className="body">
         <div className="contianer">
@@ -18,7 +58,11 @@ function Account() {
                     guests after a reservation is confirmed.
                   </p>
                   <p className="div">What info is shared with others?</p>
+<<<<<<< HEAD
                   <img className="svg" alt="Svg" src={Logo} />
+=======
+                  <img className="svg" alt="Svg" src="/img/svg.svg" />
+>>>>>>> 1f330c433cecbfd11928fd82c08c97af07922cc9
                 </div>
                 <div className="div-2" />
                 <div className="question-2">
@@ -29,7 +73,11 @@ function Account() {
                     time you book or create a listing.
                   </p>
                   <p className="text-wrapper-2">Which details can be edited?</p>
+<<<<<<< HEAD
                   <img className="svg" alt="Svg" src={Logo} />
+=======
+                  <img className="svg" alt="Svg" src="/img/svg-1.svg" />
+>>>>>>> 1f330c433cecbfd11928fd82c08c97af07922cc9
                 </div>
                 <div className="div-3" />
                 <div className="question-3">
@@ -97,7 +145,11 @@ function Account() {
           </div>
         </div>
         <div className="group">
+<<<<<<< HEAD
           <img className="image" alt="lgo" src={Logo} />
+=======
+          <img className="image" alt="Image" src="/img/image-2.png" />
+>>>>>>> 1f330c433cecbfd11928fd82c08c97af07922cc9
           <div className="text-wrapper-17">choose profile picture</div>
         </div>
       </div>
