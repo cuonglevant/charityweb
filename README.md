@@ -2,7 +2,7 @@
 
 This is a repository for the final exam project of Thematic 1
 
-Thank Mr. Hoang for this repository.
+Thank Mr. Hoang from CES for this Readme file/repo.
 
 Project Name : **_Charity Web_**
 
