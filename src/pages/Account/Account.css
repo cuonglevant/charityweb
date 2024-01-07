@@ -258,7 +258,10 @@
   top: 0;
   white-space: nowrap;
   width: 26px;
+<<<<<<< HEAD
   cursor: pointer;
+=======
+>>>>>>> 6a82ea3 (feat: update homepage)
 }
 
 .account .social-media-account-wrapper {
@@ -350,7 +353,10 @@
   top: 0;
   white-space: nowrap;
   width: 28px;
+<<<<<<< HEAD
   cursor: pointer;
+=======
+>>>>>>> 6a82ea3 (feat: update homepage)
 }
 
 .account .email-address-wrapper {
