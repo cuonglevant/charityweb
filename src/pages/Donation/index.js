@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "./Donation.css";
 import Logo from "../../assets/img/Logo.png";
 
-
 function Donation() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -14,18 +13,18 @@ function Donation() {
     setMenu(!menu);
   };
 
-  const handleOnChangeAmount = (event) =>{
-    this.setAmount ({
+  const handleOnChangeAmount = (event) => {
+    this.setAmount({
       amount: event.target.value,
-    })
-  }
+    });
+  };
 
-  const [amount, setAmount] = useState('$0.00');
-  const [option1, setOption1] = useState('$10.00');
-  const [option2, setOption2] = useState('$25.00');
-  const [option3, setOption3] = useState('$50.00');
-  const [option4, setOption4] = useState('$100.00');
-  const [option5, setOption5] = useState('$250.00');
+  const [amount, setAmount] = useState("$0.00");
+  const [option1, setOption1] = useState("$10.00");
+  const [option2, setOption2] = useState("$25.00");
+  const [option3, setOption3] = useState("$50.00");
+  const [option4, setOption4] = useState("$100.00");
+  const [option5, setOption5] = useState("$250.00");
   const [readOnly, setReadOnly] = useState(true);
 
   const handleButtonClick = () => {
@@ -33,27 +32,27 @@ function Donation() {
   };
 
   const handleMoneyButtonClick = (event) => {
-    const buttonId = event.target.id; 
+    const buttonId = event.target.id;
 
     let optionValue;
     switch (buttonId) {
-      case 'option1':
+      case "option1":
         optionValue = option1;
         break;
-      case 'option2':
+      case "option2":
         optionValue = option2;
         break;
-      case 'option3':
+      case "option3":
         optionValue = option3;
         break;
-      case 'option4':
+      case "option4":
         optionValue = option4;
         break;
-      case 'option5':
+      case "option5":
         optionValue = option5;
         break;
       default:
-        optionValue = '';
+        optionValue = "";
         break;
     }
 
@@ -64,12 +63,11 @@ function Donation() {
     alert("Thanks for supporting us!");
   };
 
-
   return (
     <div>
       <div className="header">
         <nav>
-          <img  className="nav--img" src={Logo} alt="Logo" />
+          <img className="nav--img" src={Logo} alt="Logo" />
           <div className="dropdown">
             <button className="dropbtn" onClick={handleClick}>
               Menu
@@ -101,8 +99,20 @@ function Donation() {
         <form>
           <h1>Your Donation</h1>
           <h3 className="icon">$</h3>
-          <input className="money-input" type="text" value={amount} onChange={e => setAmount(e.target.value) } readOnly={readOnly}></input>
-          <button type= "button" className="btn-custom" onClick={handleButtonClick}>Custom Amount</button>
+          <input
+            className="money-input"
+            type="text"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+            readOnly={readOnly}
+          ></input>
+          <button
+            type="button"
+            className="btn-custom"
+            onClick={handleButtonClick}
+          >
+            Custom Amount
+          </button>
           <br />
           <div className="money">
             <input
@@ -236,7 +246,12 @@ function Donation() {
           <div className="amount">{amount}</div>
           <br />
           <div className="btn-donate">
-            <button className="btn" type="submit" id="btn-donate" onClick={handleDonateButton}>
+            <button
+              className="btn"
+              type="submit"
+              id="btn-donate"
+              onClick={handleDonateButton}
+            >
               Donate now
             </button>
           </div>
