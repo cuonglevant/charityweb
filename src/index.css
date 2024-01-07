@@ -1,5 +1,4 @@
 :root {
-  --home-background-color: #e5e6c7;
   --nav-backgrond-color: #32c32f;
   --font-size-small: 1.2rem;
   --font-size-medium: 1.8rem;
@@ -31,6 +30,8 @@
   --object-color: #e2e71a40;
   --white: white;
   --button-background-color: #948d49;
+  --volunteer-call-color: #606217;
+  --volunteer-title-color: #94C66D;
 
   --nav-backgrond-color: #32c32f;
   --font-size-small: 1.2rem;
@@ -69,8 +70,6 @@
   --dropbtn-background-color: #3e8e41;
   --dropdown-content-a: black;
   --dropdown-content-background-color: #98e096;
-
-  --home-background-color: #eceec2;
   --nav-backgrond-color: #90d471;
 
   --font-size-small: 1.2rem;

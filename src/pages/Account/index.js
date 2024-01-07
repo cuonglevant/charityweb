@@ -104,8 +104,7 @@ function Account() {
         </div>
         <div className="group">
           <img className="image" alt="lgo" src={Avt} />
-          <div className="text-wrapper-17">choose profile picture
-          </div>
+          <div className="text-wrapper-17">choose profile picture</div>
         </div>
       </div>
     </div>

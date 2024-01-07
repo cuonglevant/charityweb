@@ -14,12 +14,10 @@
   height: 10rem;
   border-radius: 1.25rem;
   background-color: var(--nav-backgrond-color);
-  flex: 5;
+  flex: auto;
 }
 
-.menu-bar {
-  flex: 4;
-}
+
 
 .logo img {
     height: 10rem;
@@ -37,7 +35,8 @@
   display: flex;
   align-items: center;
   border-radius: 2.5rem;
-  flex: 9;
+  width: 40rem;
+  margin-left: 2rem;
 }
 
 .search-icon {
