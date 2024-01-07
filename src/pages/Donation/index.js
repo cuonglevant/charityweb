@@ -3,10 +3,6 @@ import React, { useState } from "react";
 import "./Donation.css";
 import Logo from "../../assets/img/Logo.png";
 
-<<<<<<< HEAD
-=======
-
->>>>>>> c0c5da5 (abd)
 function Donation() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -17,7 +13,6 @@ function Donation() {
     setMenu(!menu);
   };
 
-<<<<<<< HEAD
   const handleOnChangeAmount = (event) => {
     this.setAmount({
       amount: event.target.value,
@@ -30,20 +25,6 @@ function Donation() {
   const [option3, setOption3] = useState("$50.00");
   const [option4, setOption4] = useState("$100.00");
   const [option5, setOption5] = useState("$250.00");
-=======
-  const handleOnChangeAmount = (event) =>{
-    this.setAmount ({
-      amount: event.target.value,
-    })
-  }
-
-  const [amount, setAmount] = useState('$0.00');
-  const [option1, setOption1] = useState('$10.00');
-  const [option2, setOption2] = useState('$25.00');
-  const [option3, setOption3] = useState('$50.00');
-  const [option4, setOption4] = useState('$100.00');
-  const [option5, setOption5] = useState('$250.00');
->>>>>>> c0c5da5 (abd)
   const [readOnly, setReadOnly] = useState(true);
 
   const handleButtonClick = () => {
