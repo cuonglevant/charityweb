@@ -4,9 +4,12 @@ import "./Account.css";
 
 import Logo from "../../assets/img/Logo.png";
 import Avt from "../../assets/img/avt.jpg";
+<<<<<<< HEAD
 import Login from "../../assets/img/Login-btn.png";
 import Intro from "../../assets/img/intro-img.png";
 import Donated from "../../assets/img/Donated-icon.png";
+=======
+>>>>>>> 14c3ff4 (changed a little bit more)
 import Sponsored from "../../assets/img/Sponsored-icon.png";
 import Raised from "../../assets/img/Raised-icon.png";
 
