@@ -169,6 +169,7 @@ body {
   border-color: var(--home-background-color);
   left: 15rem;
 }
+
 .form-label {
   margin: 0;
   display: flex;

@@ -33,8 +33,8 @@ function Login() {
             {" "}
             <button>Login</button>{" "}
           </div>
-          <div className="register-btn">Don't have an account? Register</div>
         </div>
+        <div className="register-btn">Don't have an account? Register</div>
       </div>
     </div>
   );
