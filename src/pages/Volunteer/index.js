@@ -1,6 +1,12 @@
 import React from "react";
 import "./Volunteer.css";
 import Logo from "../../assets/img/Logo.png";
+import Frame from "../../assets/img/Frame.png";
+import Noti from "../../assets/img/notify.png";
+import Svg from "../../assets/img/svg.png";
+import Vol from "../../assets/img/Vol.png";
+import Vol2 from "../../assets/img/Vol2.png";
+import avt from "../../assets/img/image-2.png";
 
 function Volunteer() {
   return (
@@ -181,11 +187,11 @@ function Volunteer() {
             </div>
           </div>
           <div className="image">
-            <img className="img" alt="Image" src="/img/image-1.png" />
+            <img className="img" alt="Image" src={Vol} />
           </div>
         </div>
         <div className="element-3">
-          <img className="image-2" alt="Image" src="/img/image.png" />
+          <img className="image-2" alt="Image" src={Vol2} />
           <div className="content-9">
             <div className="text-wrapper-8">More People More impact</div>
             <p className="lorem-ipsum-is-2">
@@ -201,7 +207,7 @@ function Volunteer() {
         <div className="overlap-3">
           <header className="header">
             <div className="overlap-4">
-              <img className="logo" alt="Logo" src="/img/logo-2.png" />
+              <img className="logo" alt="Logo" src={Logo} />
               <div className="frame">
                 <div className="fundraise">FUNDRAISE</div>
               </div>
@@ -214,7 +220,7 @@ function Volunteer() {
                   <p className="text-wrapper-10">
                     Find your friend or search the news
                   </p>
-                  <img className="frame-3" alt="Frame" src="/img/frame.svg" />
+                  <img className="frame-3" alt="Frame" src={Frame} />
                 </div>
               </div>
               <div className="overlap-5">
@@ -222,7 +228,7 @@ function Volunteer() {
                   <img
                     className="group-4"
                     alt="Group"
-                    src="/img/group-14.png"
+                    src={avt}
                   />
                   <div className="text-wrapper-11">Welcome, userr1</div>
                 </div>
@@ -238,7 +244,7 @@ function Volunteer() {
           <img
             className="airbnb-logo"
             alt="Airbnb logo"
-            src="/img/airbnb-logo.svg"
+            src={Svg}
           />
         </div>
       </div>
