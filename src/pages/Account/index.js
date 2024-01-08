@@ -10,8 +10,15 @@ import Donated from "../../assets/img/Donated-icon.png";
 import Sponsored from "../../assets/img/Sponsored-icon.png";
 import Raised from "../../assets/img/Raised-icon.png";
 
+
 function Account() {
+  const handleReset = () => {
+    window.location.reload();
+  };
+
   return (
+    
+  
     <div className="account">
       <div className="body">
         <div className="contianer">
@@ -52,40 +59,58 @@ function Account() {
                 <div className="container">
                   <div className="div-4">
                     <div className="text-wrapper-5">Address</div>
-                    <div className="text-wrapper-6">Not provided</div>
-                    <div className="text-wrapper-7">Edit</div>
+                    <input
+                      type="text"
+                       className="email"
+                       placeholder="Enter your address"
+                     />
+                    {/* <div className="text-wrapper-7">Edit</div> */}
                   </div>
                 </div>
                 <div className="social-media-account-wrapper">
                   <div className="div-4">
                     <div className="text-wrapper-8">Social media account</div>
-                    <div className="text-wrapper-6">Not provided</div>
-                    <div className="text-wrapper-7">Add</div>
+                    <input
+                      type="text"
+                       className="email"
+                       placeholder="Enter your link"
+                     />
+                    <div className="text-wrapper-7" onClick={handleReset}>Add</div>
                   </div>
                 </div>
                 <div className="phone-numbers-wrapper">
                   <div className="phone-numbers">
                     <div className="text-wrapper-9">Phone numbers</div>
-                    <p className="text-wrapper-10">
-                      Add a number so confirmed guests and we can get in touch.
-                    </p>
-                    <div className="text-wrapper-11">Add</div>
+                    <input
+                      type="text"
+                       className="email"
+                       placeholder="Enter your phone number"
+                     />
+                    {/* <div className="text-wrapper-11">Add</div> */}
                   </div>
                 </div>
                 <div className="email-address-wrapper">
                   <div className="div-4">
                     <div className="text-wrapper-12">Email address</div>
-                    <div className="email">nothingthere@dgmail.com</div>
-                    <div className="text-wrapper-7">Edit</div>
+                    <input
+                      type="text"
+                       className="email"
+                       placeholder="Enter your email"
+                     />
+                    {/* <div className="text-wrapper-7">Edit</div> */}
                   </div>
                 </div>
                 <div className="legal-name-wrapper">
-                  <div className="div-4">
-                    <div className="text-wrapper-13">Legal name</div>
-                    <div className="name">Peter Griffin</div>
-                    <div className="text-wrapper-7">Edit</div>
+                 <div className="div-4">
+                  <div className="text-wrapper-13">Legal name</div>
+                   <input
+                    type="text"
+                    className="name"
+                    placeholder="Enter your name"
+                    />
+                   {/* <div className="text-wrapper-7">Edit</div> */}
                   </div>
-                </div>
+                 </div>
               </div>
             </div>
             <div className="account-navigation">
@@ -94,7 +119,7 @@ function Account() {
                   <div className="text-wrapper-14">Account</div>
                   <div className="li">
                     <img className="img" alt="Svg" src={Logo} />
-                    <div className="text-wrapper-15">Personal info</div>
+                    
                   </div>
                 </div>
               </div>
@@ -109,6 +134,7 @@ function Account() {
         </div>
       </div>
     </div>
+    
   );
 }
 export default Account;
