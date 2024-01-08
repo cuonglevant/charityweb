@@ -12,9 +12,9 @@ body {
 .send-respond .div {
   background-color: var(--home-background-color);
   height: 64rem;
-  position: absolute;
-  width: 90rem;
-  left: 15rem;
+  position: relative;
+  width: 100%;
+  left: 0rem;
 }
 
 .send-respond .send-me-a-message {
