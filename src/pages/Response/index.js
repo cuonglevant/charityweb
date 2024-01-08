@@ -17,13 +17,12 @@ function Response() {
 
         <div className="address">
           <div className="group">
-            <div className="text-wrapper">Address</div>
+            <div className="text-wrapper">About us</div>
             <i className="quam-elementum">
-              Quam Elementum Pulvinar Etiam Non Quam Lacus
-              <br />
-              suspendisse.a Scelerisque Purus Semper Eget Duis At
-              <br />
-              lobortisscelerisque Fermentum Dui Faucibus In Ornare....
+              Explore hundreds of virtual volunteer opportunities in cause areas
+              like health and medicine, education, and community building that
+              you can do from a computer, from home or any other preferred
+              location.
             </i>
             <p className="location">
               <span className="span">Location : </span>
@@ -105,13 +104,13 @@ function Response() {
                   <label htmlFor="message" className="form-label">
                     Message
                   </label>
-                  <input
+                  <textarea
+                    className="form-control"
+                    rows="5"
                     id="message"
-                    className="form-control-message"
-                    type="text"
-                    name="message"
-                    placeholder="Type Your Message Here..."
-                  />
+                    name="text"
+                    placeholder="Leave a message..."
+                  ></textarea>
                 </div>
               </div>
             </form>
@@ -120,7 +119,7 @@ function Response() {
 
         <div className="button">
           <a className="submit-btn" href="" Send Message>
-            Send Message
+            Send message
           </a>
         </div>
       </div>
