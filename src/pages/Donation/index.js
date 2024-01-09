@@ -2,16 +2,13 @@ import React, { useState } from "react";
 
 import "./Donation.css";
 import Logo from "../../assets/img/Logo.png";
+import Login from "../../assets/img/Login-btn.png";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function Donation() {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggle = () => setDropdownOpen((prevState) => !prevState);
-  const [menu, setMenu] = useState(false);
-
-  const handleClick = () => {
-    setMenu(!menu);
-  };
 
   const handleOnChangeAmount = (event) => {
     this.setAmount({
@@ -57,6 +54,7 @@ function Donation() {
     }
 
     setAmount(optionValue.toString());
+    setReadOnly(false);
   };
 
   const handleDonateButton = () => {
@@ -66,32 +64,42 @@ function Donation() {
   return (
     <div>
       <div className="header">
-        <nav>
-          <img className="nav--img" src={Logo} alt="Logo" />
-          <div className="dropdown">
-            <button className="dropbtn" onClick={handleClick}>
-              Menu
-            </button>
-            {menu && (
-              <div className="dropdown-content">
-                <a href="#">Home</a>
-                <a href="#">About us</a>
-                <a href="#">Way to Fundraise</a>
-                <a href="#">News</a>
+        <nav className="nav-bar">
+          <div className="logo">
+            <img src={Logo} alt="logo" />
+          </div>
+          <div className="menu-bar">
+            <div className="search-login">
+              <div className="search-bar">
+                <FontAwesomeIcon className="search-icon" icon={faSearch} />
+                <input
+                  className="search-input"
+                  type="search"
+                  placeholder="Find your friend or search the news"
+                  aria-label="Search"
+                />
               </div>
-            )}
-          </div>
-          <div className="nav--searchbar">
-            <input
-              type="search"
-              placeholder="Find your friend or search the news"
-            ></input>
-          </div>
-          <div className="nav--btn1">
-            <button type="submit">Fundraise</button>
-          </div>
-          <div className="nav--btn2">
-            <button type="submit">Donate</button>
+              <div className="login-btn">
+                <img src={Login} alt="login" />
+              </div>
+            </div>
+            <div className="page-donate">
+              <div className="page-links">
+                <div className="link-home">
+                  <a href="/">Home</a>
+                </div>
+                <div className="link-contact">
+                  <a href="/">About us</a>
+                </div>
+                <div className="ways-to-rise">
+                  <a href="/">Ways to Fundraise</a>
+                </div>
+              </div>
+              <div className="donate-btn">
+                <div className="donate">DONATE</div>
+                <div className="fundraise">FUNDRAISE</div>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
