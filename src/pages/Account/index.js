@@ -1,4 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import "./Account.css";
 
@@ -20,6 +24,46 @@ function Account() {
     
   
     <div className="account">
+      <div className="header">
+        <nav className="nav-bar">
+          <div className="logo">
+            <img src={Logo} alt="logo" />
+          </div>
+          <div className="menu-bar">
+            <div className="search-login">
+              <div className="search-bar">
+                <FontAwesomeIcon className="search-icon" icon={faSearch} />
+                <input
+                  className="search-input"
+                  type="search"
+                  placeholder="Find your friend or search the news"
+                  aria-label="Search"
+                />
+              </div>
+              <div className="login-btn">
+                <img src={Login} alt="login" />
+              </div>
+            </div>
+            <div className="page-donate">
+              <div className="page-links">
+                <div className="link-home">
+                  <a href="/">Home</a>
+                </div>
+                <div className="link-contact">
+                  <a href="/">About us</a>
+                </div>
+                <div className="ways-to-rise">
+                  <a href="/">Ways to Fundraise</a>
+                </div>
+              </div>
+              <div className="donate-btn">
+                <div className="donate">DONATE</div>
+                <div className="fundraise">FUNDRAISE</div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
       <div className="body">
         <div className="contianer">
           <div className="overlap">
