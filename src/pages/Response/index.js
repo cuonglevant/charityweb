@@ -122,6 +122,9 @@ function Response() {
           <a className="submit-btn" href="" Send Message>
             Send Message
           </a>
+          <button type="submit" className="submit-btn">
+            Send Message
+          </button>
         </div>
       </div>
     </div>

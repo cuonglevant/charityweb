@@ -1,24 +1,41 @@
-import React from "react";
+import React, {useState} from "react";
 
 import "./Account.css";
-
+import {
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from "reactstrap";
 import Logo from "../../assets/img/Logo.png";
-import Avt from "../../assets/img/avt.jpg";
-import Login from "../../assets/img/Login-btn.png";
-import Intro from "../../assets/img/intro-img.png";
-import Donated from "../../assets/img/Donated-icon.png";
-import Sponsored from "../../assets/img/Sponsored-icon.png";
-import Raised from "../../assets/img/Raised-icon.png";
-
 
 function Account() {
-  const handleReset = () => {
-    window.location.reload();
-  };
-
   return (
-    
-  
+    // <div className="header">
+    //     <nav>
+    //       <img src="./assets/Logo.png" alt="Logo" />
+    //       <div className="d-flex p-5">
+    //         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+    //           <DropdownToggle caret>Menu</DropdownToggle>
+    //           <DropdownMenu>
+    //             <DropdownItem>Home</DropdownItem>
+    //             <DropdownItem>About us</DropdownItem>
+    //             <DropdownItem>ways to function</DropdownItem>
+    //             <DropdownItem>News</DropdownItem>
+    //           </DropdownMenu>
+    //         </Dropdown>
+    //       </div>
+    //       <div className="nav--searchbar">
+    //       <input type="search" placeholder="Find your friend or search the news"></input>
+    //       </div>
+    //       <div className="box">
+    //   <div className="group">
+    //     <img className="img" alt="Avatar" src="./assets/Logo.png" />
+    //     <div className="text-wrapper">Welcome, userr1</div>
+    //   </div>
+      
+    // </div>
+
     <div className="account">
       <div className="body">
         <div className="contianer">
@@ -31,18 +48,18 @@ function Account() {
                     guests after a reservation is confirmed.
                   </p>
                   <p className="div">What info is shared with others?</p>
-                  <img className="svg" alt="Svg" src={Raised} />
+                  <img className="svg" alt="Svg" src="/img/svg.svg" />
                 </div>
                 <div className="div-2" />
                 <div className="question-2">
                   <p className="p">
-                    Details for users uses to verify your identity can’t be
+                    Details Airbnb uses to verify your identity can’t be
                     changed. Contact info and some personal details can be
                     edited, but we may ask you verify your identity the next
-                    time you donate.
+                    time you book or create a listing.
                   </p>
                   <p className="text-wrapper-2">Which details can be edited?</p>
-                  <img className="svg" alt="Svg" src={Sponsored} />
+                  <img className="svg" alt="Svg" src="/img/svg-1.svg" />
                 </div>
                 <div className="div-3" />
                 <div className="question-3">
@@ -52,65 +69,47 @@ function Account() {
                   <p className="text-wrapper-4">
                     Why isn’t my info shown here?
                   </p>
-                  <img className="svg" alt="Svg" src={Logo} />
+                  <img className="svg" alt="Svg" src="/img/svg-3.svg" />
                 </div>
               </div>
               <div className="settings">
                 <div className="container">
                   <div className="div-4">
                     <div className="text-wrapper-5">Address</div>
-                    <input
-                      type="text"
-                       className="email"
-                       placeholder="Enter your address"
-                     />
-                    {/* <div className="text-wrapper-7">Edit</div> */}
+                    <div className="text-wrapper-6">Not provided</div>
+                    <div className="text-wrapper-7">Edit</div>
                   </div>
                 </div>
                 <div className="social-media-account-wrapper">
                   <div className="div-4">
                     <div className="text-wrapper-8">Social media account</div>
-                    <input
-                      type="text"
-                       className="email"
-                       placeholder="Enter your link"
-                     />
-                    <div className="text-wrapper-7" onClick={handleReset}>Add</div>
+                    <div className="text-wrapper-6">Not provided</div>
+                    <div className="text-wrapper-7">Add</div>
                   </div>
                 </div>
                 <div className="phone-numbers-wrapper">
                   <div className="phone-numbers">
                     <div className="text-wrapper-9">Phone numbers</div>
-                    <input
-                      type="text"
-                       className="email"
-                       placeholder="Enter your phone number"
-                     />
-                    {/* <div className="text-wrapper-11">Add</div> */}
+                    <p className="text-wrapper-10">
+                      Add a number so confirmed guests and we can get in touch.
+                    </p>
+                    <div className="text-wrapper-11">Add</div>
                   </div>
                 </div>
                 <div className="email-address-wrapper">
                   <div className="div-4">
                     <div className="text-wrapper-12">Email address</div>
-                    <input
-                      type="text"
-                       className="email"
-                       placeholder="Enter your email"
-                     />
-                    {/* <div className="text-wrapper-7">Edit</div> */}
+                    <div className="email">nothingthere@dgmail.com</div>
+                    <div className="text-wrapper-7">Edit</div>
                   </div>
                 </div>
                 <div className="legal-name-wrapper">
-                 <div className="div-4">
-                  <div className="text-wrapper-13">Legal name</div>
-                   <input
-                    type="text"
-                    className="name"
-                    placeholder="Enter your name"
-                    />
-                   {/* <div className="text-wrapper-7">Edit</div> */}
+                  <div className="div-4">
+                    <div className="text-wrapper-13">Legal name</div>
+                    <div className="name">Peter Griffin</div>
+                    <div className="text-wrapper-7">Edit</div>
                   </div>
-                 </div>
+                </div>
               </div>
             </div>
             <div className="account-navigation">
@@ -118,8 +117,8 @@ function Account() {
                 <div className="overlap-group">
                   <div className="text-wrapper-14">Account</div>
                   <div className="li">
-                    <img className="img" alt="Svg" src={Logo} />
-                    
+                    <img className="img" alt="Svg" src="/img/svg-2.svg" />
+                    <div className="text-wrapper-15">Personal info</div>
                   </div>
                 </div>
               </div>
@@ -128,12 +127,11 @@ function Account() {
           </div>
         </div>
         <div className="group">
-          <img className="image" alt="lgo" src={Avt} />
+          <img className="image" alt="Image" src="/img/image-2.png" />
           <div className="text-wrapper-17">choose profile picture</div>
         </div>
       </div>
     </div>
-    
   );
 }
 export default Account;
